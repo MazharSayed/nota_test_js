@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Table Example</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<h2>Data Table</h2>
+
+<button id="addEntryBtn">Add New Entry</button>
+
+<!-- Success and Error Messages -->
+<div id="messageBox"></div>
+
+<!-- Modal for adding new entry -->
+<div id="addEntryModal" style="display: none;">
+    <input type="text" id="newEntryName" placeholder="Name">
+    <button id="sendNewEntry">Send</button>
+</div>
+
+<table id="dataTable">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Date Added</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Data rows will be dynamically added here -->
+    </tbody>
+</table>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
